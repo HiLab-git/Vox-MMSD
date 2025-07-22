@@ -5,7 +5,7 @@ This is the official code for Vox-MMSD: Voxel-wise Multi-scale and Multi-modal S
 
 
 ## Overall Framework
-![](pictures/pipeline.pdf)
+![](pictures/pipeline.png)
 
 Our contributions are summarized as follows:
 - We propose a self-supervised multi-modal pre-training framework for brain tumor segmentation, which can extract modality-invariant representations from multi-modal MRI scans for improved performance on small downstream segmentation datasets.
