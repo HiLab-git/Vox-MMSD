@@ -4,7 +4,7 @@ This is the official code for Vox-MMSD: Voxel-wise Multi-scale and Multi-modal S
 [2025-07] Our work have been accepted by JBHI.
 
 
-## Overall Framework
+## ✨Overall Framework
 ![](pictures/pipeline.png)
 
 Our contributions are summarized as follows:
@@ -13,12 +13,12 @@ Our contributions are summarized as follows:
 - To enhance the voxel-level feature representation ability for segmentation, we propose **ORMS** that generates voxel pairs with perturbed local context and modality set, which is combined with multi-scale self-distillation for effectively learning both global and local contextual features.
 
 
-## Dataset
+## 📁Dataset
 Download the BraTS-GLI dataset from [BraTS 2023](https://www.synapse.org/#!Synapse:syn51156910/wiki/), and put them in the ./BraTS-GLI/source_data/, use
 `python ./BraTS-GLI/create_dataset_csv.py`
 to preprocess the data and get .csv file for training
 
-## How to use
+## 🔨How to use
 1. Move into the Pymic-dev and install
 ```
     cd PyMIC-dev
@@ -30,5 +30,5 @@ to preprocess the data and get .csv file for training
     pymic_train ./BraTS-GLI/config/unet3d_voxmmsd.cfg
 ```
 
-## Acknowledgement
+## 🙏Acknowledgement
 Our codebase is built upon the [Pymic](https://github.com/HiLab-git/PyMIC.git), and refers to [DINO](https://github.com/facebookresearch/dino) and [Vox2Vec](https://github.com/mishgon/vox2vec.git).​
