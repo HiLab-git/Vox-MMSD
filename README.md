@@ -3,7 +3,7 @@
 This is the official code for Vox-MMSD: Voxel-wise Multi-scale and Multi-modal Self-Distillation for Self-supervised Brain Tumor Segmentation.
 
 
-[2025-07] Our work has been accepted by Journal of Biomedical and Health Informatics (JBHI).
+[2025-07] Our work has been accepted by **Journal of Biomedical and Health Informatics (JBHI)**.
 
 
 ## ✨Overall Framework
