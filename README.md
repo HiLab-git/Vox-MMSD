@@ -16,7 +16,7 @@ Our contributions are summarized as follows:
 ## Dataset
 Download the BraTS-GLI dataset from [BraTS 2023](https://www.synapse.org/#!Synapse:syn51156910/wiki/), and put them in the ./BraTS-GLI/source_data/, use
 `python ./BraTS-GLI/create_dataset_csv.py`
-to preprocess the data and get .csv file for training
+to preprocess the data and get .csv file for pre-training. Similarly, if you need to preprocess the downstream datasets, for example, BraTS-PED here, you can also follow this operation.
 
 ## How to use
 1. Move into the Pymic-dev and install
@@ -24,11 +24,24 @@ to preprocess the data and get .csv file for training
     cd PyMIC-dev
     pip install -e .
 ```
-2. Move back to the Vox-MMSD dir and run training command
+
+## Pre-training
+2. Move back to the Vox-MMSD dir and run pre-training command
 ```
     cd ..
     pymic_train ./BraTS-GLI/config/unet3d_voxmmsd.cfg
 ```
+
+## Fine-tuning
+3. Here we use BraTS-PED as the downstream dataset, use
+```
+    pymic_train ./BraTS-PED/config/unet3d_baseline.cfg
+```
+to train a downstream segmentation model from scratch. Or use
+```
+    pymic_train ./BraTS-PED/config/unet3d_voxmmsd.cfg
+```
+to train a downstream segmentation model with pre-trained model by Vox-MMSD.
 
 ## Acknowledgement
 Our codebase is built upon the [Pymic](https://github.com/HiLab-git/PyMIC.git), and refers to [DINO](https://github.com/facebookresearch/dino) and [Vox2Vec](https://github.com/mishgon/vox2vec.git).​
