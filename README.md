@@ -1,6 +1,7 @@
 # Vox-MMSD: Voxel-wise Multi-scale and Multi-modal Self-Distillation for Self-supervised Brain Tumor Segmentation
 ---
 This is the official code for Vox-MMSD: Voxel-wise Multi-scale and Multi-modal Self-Distillation for Self-supervised Brain Tumor Segmentation.
+
 [2025-07] Our work have been accepted by JBHI.
 
 
@@ -25,14 +26,14 @@ to preprocess the data and get .csv file for pre-training. Similarly, if you nee
     pip install -e .
 ```
 
-## Pre-training
+### Pre-training
 2. Move back to the Vox-MMSD dir and run pre-training command
 ```
     cd ..
     pymic_train ./BraTS-GLI/config/unet3d_voxmmsd.cfg
 ```
 
-## Fine-tuning
+### Fine-tuning
 3. Here we use BraTS-PED as the downstream dataset, use
 ```
     pymic_train ./BraTS-PED/config/unet3d_baseline.cfg
