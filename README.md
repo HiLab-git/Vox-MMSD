@@ -1,12 +1,6 @@
 # Vox-MMSD: Voxel-wise Multi-scale and Multi-modal Self-Distillation for Self-supervised Brain Tumor Segmentation
 ---
 This is the official code for Vox-MMSD: Voxel-wise Multi-scale and Multi-modal Self-Distillation for Self-supervised Brain Tumor Segmentation.
-<<<<<<< HEAD
-=======
-
-[2025-07] Our work have been accepted by JBHI.
->>>>>>> fd6fec4b21f99e050ace68317946b8d55ff19f9a
-
 
 [2025-07] Our work has been accepted by **Journal of Biomedical and Health Informatics (JBHI)**.
 
@@ -39,10 +33,6 @@ to preprocess the data and get .csv file for pre-training. Similarly, if you nee
     pymic_train ./BraTS-GLI/config/unet3d_voxmmsd.cfg
 ```
 
-<<<<<<< HEAD
-## 🙏Acknowledgement
-Our codebase is built upon the [Pymic](https://github.com/HiLab-git/PyMIC.git), and refers to [DINO](https://github.com/facebookresearch/dino) and [Vox2Vec](https://github.com/mishgon/vox2vec.git).​
-=======
 ### Fine-tuning
 3. Here we use BraTS-PED as the downstream dataset, use
 ```
@@ -54,6 +44,5 @@ to train a downstream segmentation model from scratch. Or use
 ```
 to train a downstream segmentation model with pre-trained model by Vox-MMSD.
 
-## Acknowledgement
+## 🙏Acknowledgement
 Our codebase is built upon the [Pymic](https://github.com/HiLab-git/PyMIC.git), and refers to [DINO](https://github.com/facebookresearch/dino) and [Vox2Vec](https://github.com/mishgon/vox2vec.git).​
->>>>>>> fd6fec4b21f99e050ace68317946b8d55ff19f9a
